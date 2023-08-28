@@ -1,0 +1,256 @@
+* {
+    margin: 0;
+    padding: 0;
+    /*box-sizing: border-box;*/
+}
+
+@font-face  {
+    font-family: Raleway;
+    src: url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+    font-style: normal;
+    font-weight: 500
+}
+
+.header_name_img {
+    height: 100px;
+    /*padding: 0px 31px;*/
+    justify-content: space-between;
+    align-items: center;
+    gap: 497px;
+    flex-shrink: 0;
+    background: #E1EDE6;
+    width: 100%;
+    display: flex;
+}
+
+.content_left {
+    display: flex;
+    width: 77%;
+    max-width: 1110px;
+    margin: auto;
+    justify-content: space-between;
+}
+.list {
+    list-style: none;
+    display: flex;
+    gap: 60px;
+    align-items: center;
+}
+
+.li_comp {
+    font-size: 20px;
+    font-family: Raleway, sans-serif;
+    color: #2C2D35
+}
+
+.img_name {
+    display: flex;
+    align-items: center;
+}
+
+.img_pr {
+    width: 540px;
+    height: 621px;
+    flex-shrink: 0;
+    transform: scale(-1, 1);
+    object-fit: cover;
+}
+
+.title_pr {
+    font-family: Raleway, sans-serif;
+    color: #2C2D35;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 500;
+    padding-bottom: 20px;
+}
+
+.title_sp {
+    color: #598D66;
+    font-family: Raleway, sans-serif;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 110%;
+}
+
+.description_pr {
+    color: #86928B;
+    font-family: Raleway, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    padding-bottom: 60px;
+}
+
+.pres {
+    display: flex;
+    width: 77%;
+    max-width: 1110px;
+    margin: auto;
+    gap: 30px;
+}
+
+.content_pr {
+    align-self: center;
+    width: 540px;
+    height: 331px;
+}
+
+.btn_pr {
+    display: inline-flex;
+    height: 65px;
+    padding: 20px 60px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #598D66;
+    background: #fff;
+    color: #598D66;
+    font-family: Raleway, sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.btn_pr:hover {
+    background: #376B44;
+    color: white;
+    transition: 0.4s;
+}
+
+.navigations {
+    max-width: 1110px;
+    display: flex;
+    width: 77%;
+    margin: auto;
+    justify-content: space-between;
+    padding-top: 70px;
+    padding-bottom: 30px;
+}
+
+.reproduct {
+    color: #2C2D35;
+    font-family: Raleway, sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 110%;
+    justify-content: space-between;
+}
+
+.product_ul {
+    list-style: none;
+    display: flex;
+    gap: 32px;
+    align-self: center;
+}
+.product_li {
+    color: #2C2D35;
+    font-family: Raleway, sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    border-radius: 20px;
+    background: #D4E8D9;
+    display: flex;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.product_li:hover {
+    background: #376B44;
+    color: white;
+    transition: 0.4s;
+}
+
+/*/ Стили для продуктов /*/
+
+.img_product {
+    width: 310px;
+    height: 422px;
+    flex-shrink: 0;
+}
+
+.author {
+    color: #86928B;
+    font-family: Raleway, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding-top: 20px;
+}
+
+.name_picture {
+    color: #2C2D35;
+    font-family: Raleway, sans-serif;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding-top: 10px;
+}
+
+.materials {
+    color: #2C2D35;
+    font-family: Raleway, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding-top: 8px;
+}
+
+.price {
+    color: #598D66;
+    font-family: Raleway, sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+.btn_item {
+    width: 310px;
+    height: 65px;
+    padding: 20px 60px;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    flex-shrink: 0;
+    border: 1px solid #598D66;
+    background: #E1EDE6;
+    color: #598D66;
+    font-family: Raleway, sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    /*margin-bottom: 10px;*/
+}
+
+.item {
+    width: 350px;
+    box-sizing: border-box;
+    background: #E1EDE6;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 20px 30px 20px;
+    /*margin-top: 30px;*/
+}
+
+.items_box {
+    max-width: 1110px;
+    width: 77%;
+    margin: auto;
+    gap: 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
