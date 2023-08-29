@@ -1,9 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 
-const Products = (props) => {
+const Products = ({ items, activeCountry }) => {
+    const filteredItems = items.filter((item) => item.land === activeCountry);
+
     return (
         <div className='items_box'>
-            {props.items.map((item) => (
+            {filteredItems.map((item) => (
                 <div className='item' key={item.id}>
                     <img src={item.img} alt="Product Imagess" className='img_product'/>
                     <h3 className='author'>{item.name}</h3>

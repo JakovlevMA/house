@@ -11,7 +11,7 @@ const Header = () => {
                 <li className='li_comp'>Репродукции</li>
                 <li className='li_comp'>Новинки</li>
                 <li className='li_comp'>О нас</li>
-                <div>
+                <div className='svg_header'>
                     <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
                     <g clip-path="url(#clip0_8801_102)">
                         <path d="M8.25001 20.1667C8.75627 20.1667 9.16668 19.7563 9.16668 19.25C9.16668 18.7438 8.75627 18.3334 8.25001 18.3334C7.74375 18.3334 7.33334 18.7438 7.33334 19.25C7.33334 19.7563 7.74375 20.1667 8.25001 20.1667Z" stroke="#2C2D35" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
