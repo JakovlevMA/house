@@ -7,9 +7,24 @@ import Products from "./components/Products";
 import NewItems from "./components/NewItems";
 import Commands from "./components/Commands";
 import Footer from "./components/Footer";
+import BurgerMenu from "./components/BurgerMenu";
 
 
 function App() {
+
+    const [isSmallScreen, setIsSmallScreen] = React.useState(false);
+
+    React.useEffect(() => {
+        const handleResize = () => {
+            setIsSmallScreen(window.innerWidth >= 310 && window.innerWidth <= 420);
+        };
+
+        window.addEventListener('resize', handleResize);
+        handleResize();
+
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
+
     const [activeCountry, setActiveCountry] = useState('Франция');
 
     const handleCountryClick = (country) => {
@@ -181,13 +196,28 @@ function App() {
     ]
   return (
     <div className="App">
-        <Header/>
-        <Presentation/>
-        <NavigationsProduct activeCountry={activeCountry} onCountryClick={handleCountryClick}/>
-        <Products items={items} activeCountry={activeCountry}/>
-        <NewItems/>
-        <Commands/>
-        <Footer/>
+
+        {isSmallScreen ? (
+            <>
+                <BurgerMenu/>
+                <Presentation/>
+                <NavigationsProduct activeCountry={activeCountry} onCountryClick={handleCountryClick}/>
+                <Products items={items} activeCountry={activeCountry}/>
+                <NewItems/>
+                <Commands/>
+                <Footer/>
+            </>
+        ) : (
+            <>
+                <Header/>
+                <Presentation/>
+                <NavigationsProduct activeCountry={activeCountry} onCountryClick={handleCountryClick}/>
+                <Products items={items} activeCountry={activeCountry}/>
+                <NewItems/>
+                <Commands/>
+                <Footer/>
+            </>
+        )}
     </div>
   );
 }

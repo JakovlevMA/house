@@ -8,7 +8,7 @@ const Footer = () => {
                 <img src="https://live.verstaem.online/house/img/logo.svg" alt="fff"/>
                 <div>
                 <span className='number'>+7 (999) 543-54-54</span>
-                <p className='categories_footer'>Мастерская</p>
+                <p className='categories_footer master'>Мастерская</p>
                 </div>
             </div>
                 <div className='adaptive_tablet'>
@@ -63,9 +63,10 @@ const Footer = () => {
                         </defs>
                     </svg>
                 </div>
+                <div className='ink_desc'>
                 <span className='ink'>Ink. House ®</span>
-                <br/>
                 <span className='ink'>All rights reserved</span>
+                </div>
             </div>
                 </div>
         </div>
